@@ -1,0 +1,19 @@
+<div id="tweet_right">
+    <div id="icon">
+        <img src="http://api.twitter.com/1/users/profile_image?screen_name=<%= @user['screen_name'] %>&size=bigger" >
+    </div>
+    <div id="user_name">
+        <div id="name">
+            <%= @user['name'] %>
+        </div>
+        <div id="screen_name">
+            @<%= @user['screen_name'] %>
+        </div>
+    </div>
+    <div id="tweet">
+        <div class='arrow_box_right'>
+            <%= @tweet['text'] %>
+        </div>
+    </div>
+    <div id="clear_right"></div>
+</div>
